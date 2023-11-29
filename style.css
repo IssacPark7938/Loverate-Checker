@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #ff0000, #ff7b00, #ffe100);
+    background-size: 180% 1200%;
+    animation: gradient-animation 10s ease infinite;
+    width: 100%;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .container {
+    text-align: center;
+  }
+  
+  .button {
+    width: 8.75rem;
+    height: 2.25rem;
+    border-radius: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+}
+
+input[type="text"] {
+  width: 40%;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.25rem; 
+  margin-bottom: 1rem; 
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.heading1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Dancing Script;
+    font-size: 2.6rem;
+}
+
+@media (max-width: 768px) {
+  .heading1 {
+      font-size: 2.2rem;
+  }
+}
